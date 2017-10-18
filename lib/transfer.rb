@@ -29,6 +29,5 @@ class Transfer
       if self.execute_transaction
       @sender.balance += amount
       @receiver.balance -= amount
-
     end
 end
