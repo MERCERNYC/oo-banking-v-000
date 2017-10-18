@@ -18,7 +18,7 @@ class Transfer
     if valid? && @status = "rejected"
      "Transaction rejected. Please check your account balance."
    else
-     valid? && @status == "pending"
+     @status == "pending"
      @sender.balance -= @amount
      @receiver.balance += @amount
      @status = "complete"
